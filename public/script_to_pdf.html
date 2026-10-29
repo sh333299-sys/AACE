@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AACE - 3-Minute Hackathon Pitch Script (SIH 2026)</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm 12mm 14mm;
+  }
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    background-color: #ffffff;
+    line-height: 1.45;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+  }
+  .print-bar {
+    background: #0f766e;
+    color: white;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+  }
+  .print-btn {
+    background: white;
+    color: #0f766e;
+    border: none;
+    font-weight: 700;
+    font-size: 11pt;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .header-bar {
+    border-bottom: 2px solid #0f766e;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-title {
+    font-size: 16pt;
+    font-weight: 800;
+    color: #042f2e;
+    margin: 0;
+    letter-spacing: -0.3px;
+  }
+  .header-sub {
+    font-size: 9pt;
+    color: #475569;
+    margin-top: 3px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .badge-teal {
+    background-color: #ccfbf1;
+    color: #0f766e;
+    border: 1px solid #99f6e4;
+  }
+  .badge-role {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    font-family: ui-monospace, SFMono-Regular, monospace;
+  }
+  .time-badge {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-family: ui-monospace, monospace;
+    font-size: 8.5pt;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .section-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 9px;
+    background: #ffffff;
+    page-break-inside: avoid;
+    overflow: hidden;
+  }
+  .section-header {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-body {
+    padding: 7px 10px;
+    display: grid;
+    grid-template-columns: 1fr 145px;
+    gap: 10px;
+  }
+  .speech-text {
+    font-size: 9pt;
+    color: #1e293b;
+    line-height: 1.38;
+  }
+  .speech-quote {
+    background-color: #fdfdfd;
+    border-left: 3px solid #0f766e;
+    padding-left: 8px;
+  }
+  .action-box {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 4px;
+    padding: 5px 7px;
+    font-size: 8pt;
+    color: #334155;
+    line-height: 1.35;
+  }
+  .action-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0f766e;
+    font-size: 7.5pt;
+    margin-bottom: 3px;
+  }
+  .action-list {
+    margin: 0;
+    padding-left: 12px;
+  }
+  .action-list li {
+    margin-bottom: 2px;
+  }
+  .footer {
+    border-top: 1px solid #e2e8f0;
+    margin-top: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    color: #64748b;
+  }
+</style>
+</head>
+<body>
+
+<div class="print-bar no-print">
+  <div>
+    <strong>SIH 2026 Presentation Document Ready</strong>
+    <div style="font-size: 8.5pt; opacity: 0.9;">Click below to Save as PDF or press Ctrl + P</div>
+  </div>
+  <button class="print-btn" onclick="window.print()">🖨️ Print to PDF</button>
+</div>
+
+<div class="header-bar">
+  <div>
+    <h1 class="header-title">AACE — AICTE Approval & Compliance Engine</h1>
+    <div class="header-sub">
+      <strong>Smart India Hackathon 2026</strong> | Problem Statement ID: <strong>SIH26262</strong> | Official 3-Minute Pitch Script
+    </div>
+  </div>
+  <div style="text-align: right;">
+    <span class="badge badge-teal">Live Jury Walkthrough</span>
+    <div style="font-size: 8pt; color: #64748b; margin-top: 2px;">Target Time: 180s (135 wpm)</div>
+  </div>
+</div>
+
+<!-- Part 1 -->
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="time-badge">0:00 - 0:35</span>
+      <span>Part 1: The Problem & Solution Hook</span>
+    </div>
+    <span class="badge badge-role">Role: Lead Presenter</span>
+  </div>
+  <div class="section-body">
+    <div class="speech-text speech-quote">
+      "Respected Jury Members, across India, over 10,000 technical institutions undergo AICTE regulatory compliance every single year. Yet, regional bureaus still grapple with disconnected document repositories, delayed deficiency rectifications, and critical compliance lapses—such as expired Fire Safety NOCs or matured Corpus FDRs going unnoticed until an incident occurs.<br><br>
+      To solve Problem Statement <strong>SIH26262</strong>, our team built <strong>AACE — AICTE Approval & Compliance Engine</strong>. It is a restrained, secure regulatory portal that unifies statutory approval workflows, date-driven compliance monitoring, automated multi-tier escalation, and an append-only cryptographic audit trail."
+    </div>
+    <div class="action-box">
+      <div class="action-header">🖥️ Screen Action</div>
+      <ul class="action-list">
+        <li>Start on <strong>Overview Dashboard</strong>.</li>
+        <li>Point cursor to top identity bar: <em>SIH26262 Prototype</em>.</li>
+        <li>Highlight dynamic operational cards.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Part 2 -->
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="time-badge">0:35 - 1:15</span>
+      <span>Part 2: Dynamic Dashboard & Deficiency Revert Cycle</span>
+    </div>
+    <span class="badge badge-role">Regional Officer ➔ College Admin</span>
+  </div>
+  <div class="section-body">
+    <div class="speech-text speech-quote">
+      "Notice our dashboard: every metric you see—total applications, pending reviews, and critical expiries—is computed dynamically from underlying live records, with zero hardcoded numbers.<br><br>
+      Let's begin the live workflow. As the <strong>Regional Officer</strong>, I open the <strong>Application Register</strong>. AACE models explicit regulatory paths defined in the Approval Process Handbook: <em>Scrutiny Only</em>, <em>Scrutiny + EVC</em>, and <em>Re-Scrutiny</em>.<br><br>
+      Now switching to the <strong>College Administrator</strong>: they immediately see the returned deficiency regarding their faculty cadre ratio and Fire NOC. The college uploads the rectified proof and submits a reply. Instantly, the application transitions to <strong>Re-Scrutiny Pending</strong>, advancing the workflow transparently without manual paperwork."
+    </div>
+    <div class="action-box">
+      <div class="action-header">🖥️ Screen Action</div>
+      <ul class="action-list">
+        <li>Click <strong>Application Register</strong>.</li>
+        <li>Inspect <code>APP-2026-001</code> (Kalinga).</li>
+        <li>Switch role to <strong>Institution Administrator</strong>.</li>
+        <li>Open <code>APP-2026-002</code> (Dr. APJ Abdul Kalam).</li>
+        <li>Click <strong>Submit Deficiency Reply</strong>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Part 3 -->
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="time-badge">1:15 - 1:55</span>
+      <span>Part 3: Real-Time Document Compliance & OCR Audit</span>
+    </div>
+    <span class="badge badge-role">Regional Officer Desk</span>
+  </div>
+  <div class="section-body">
+    <div class="speech-text speech-quote">
+      "Next is <strong>Document Compliance</strong>. Unlike traditional portals with static status tags, AACE evaluates expiry dynamically against the real-time clock.<br><br>
+      Here, our Fire Safety NOC shows <strong>18 days remaining</strong> in amber warning status. Below it, an institutional Corpus FDR is <strong>16 days overdue</strong>, marked in red.<br><br>
+      When a document is uploaded, AACE runs an automated <strong>OCR Extraction Audit</strong>. The reviewer compares the extracted registration number, issuing authority, and dates against the submitted declaration. If a municipal seal is missing or dates mismatch, the officer flags the discrepancy for manual review—ensuring accountable human oversight rather than blind automation."
+    </div>
+    <div class="action-box">
+      <div class="action-header">🖥️ Screen Action</div>
+      <ul class="action-list">
+        <li>Click <strong>Document Compliance</strong>.</li>
+        <li>Show <code>DOC-101</code> (18d left) & <code>DOC-102</code> (16d overdue).</li>
+        <li>Click <strong>OCR Audit</strong> on <code>DOC-101</code>.</li>
+        <li>Highlight side-by-side comparison & confidence (94%).</li>
+        <li>Close OCR modal.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Part 4 -->
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="time-badge">1:55 - 2:30</span>
+      <span>Part 4: EVC Inspection & Escalation Policy</span>
+    </div>
+    <span class="badge badge-role">EVC Inspector ➔ Central Director</span>
+  </div>
+  <div class="section-body">
+    <div class="speech-text speech-quote">
+      "Next, let's switch to the <strong>EVC Inspector</strong> conducting a campus visit for <em>Sahyadri College</em>. Inspectors access a structured physical checklist covering smart classrooms, 1 Gbps leased line bandwidth, RPwD barrier-free ramps, and NBC fire systems, complete with simulated GPS geo-tagging.<br><br>
+      When the inspector clicks <strong>Submit Final EVC Visit Report</strong>, the application pipeline automatically updates to <code>EVC_REPORT_SUBMITTED</code> with a score of 100%.<br><br>
+      Now, as the <strong>Central Director</strong>, we see our <strong>Automated Escalation Policy</strong>: at T-30 days warning to college, T+0 overdue to Regional Bureau, and at T+15 days, AACE automatically drafts a formal <strong>Statutory Show-Cause Notice</strong>. Crucially, our system never automatically issues statutory penalties—it requires formal human director sign-off."
+    </div>
+    <div class="action-box">
+      <div class="action-header">🖥️ Screen Action</div>
+      <ul class="action-list">
+        <li>Switch role to <strong>EVC Inspector</strong>.</li>
+        <li>Go to <strong>EVC Inspections</strong>.</li>
+        <li>Click <strong>Submit Final EVC Report</strong>.</li>
+        <li>Switch role to <strong>Central Director</strong>.</li>
+        <li>Go to <strong>Alerts & Escalations</strong>.</li>
+        <li>Click <strong>Review Draft Notice</strong> ➔ <strong>Sign & Issue</strong>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Part 5 -->
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="time-badge">2:30 - 3:00</span>
+      <span>Part 5: Tamper-Evident Audit Trail & Conclusion</span>
+    </div>
+    <span class="badge badge-role">All Roles / Apex Audit</span>
+  </div>
+  <div class="section-body">
+    <div class="speech-text speech-quote">
+      "Finally, we open the <strong>Audit Trail</strong>. Every single action we just took—the deficiency resubmission, OCR audit, inspection findings, and director sign-off—is recorded chronologically in an append-only log.<br><br>
+      Each block is linked via deterministic <strong>SHA-256 hash chaining</strong>. Notice the green confirmation: the cryptographic validator recomputed all hashes from the genesis block, verifying zero data tampering. If testing again, the <strong>Reset Demo Data</strong> button restores the clean scenario with one click.<br><br>
+      AACE delivers practical, transparent, and legally compliant workflow governance for AICTE. We are now open for your questions. Thank you!"
+    </div>
+    <div class="action-box">
+      <div class="action-header">🖥️ Screen Action</div>
+      <ul class="action-list">
+        <li>Click <strong>Audit Trail</strong>.</li>
+        <li>Click <strong>Verify Cryptographic Chain</strong>.</li>
+        <li>Show green validation alert.</li>
+        <li>Point to top <strong>Reset Demo Data</strong> button.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div><strong>AACE: Next-Gen AICTE Approval & Compliance Engine</strong> • Problem Statement ID: SIH26262</div>
+  <div>Page 1 of 1 • Prepared for Smart India Hackathon 2026 Evaluation</div>
+</div>
+
+</body>
+</html>
